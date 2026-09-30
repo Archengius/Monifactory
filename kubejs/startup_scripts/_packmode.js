@@ -105,7 +105,7 @@ global.doHarderPrintedSilicon = packMode == "Expert";
 global.doHarderProcessing = packMode == "Hard" || packMode == "Expert";
 global.doHarderRecipes = packMode == "Hard" || packMode == "Expert";
 global.doHardGlassRecipesWarning == packMode == "Hard" || packMode == "Expert";
-global.doHatchRevert = packMode == "Normal" || packMode == "Hard";
+global.doHatchRevert = packMode == "Normal" || packMode == "Hard" || packMode == "Expert";
 global.doHNN = packMode == "Normal";
 global.doLaserIO = packMode == "Normal" || packMode == "Hard";
 global.doMeowniPlush = packMode == "Hard" || packMode == "Expert";

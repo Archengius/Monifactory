@@ -17,6 +17,7 @@ ServerEvents.recipes(event => {
         ["#forge:storage_blocks/emerald", "gtceu:emeradic_block", GTValues.VA[GTValues.MV], "emeradic_block"],
         ["#forge:storage_blocks/iron", "gtceu:enori_block", GTValues.VA[GTValues.MV], "enori_block"],
         ["minecraft:sand", "minecraft:soul_sand", GTValues.VA[GTValues.MV], "soul_sand"],
+        ["minecraft:sandstone", "minecraft:red_sandstone", GTValues.VA[GTValues.LV], "red_sandstone"],
         ["minecraft:rotten_flesh", "minecraft:leather", GTValues.VA[GTValues.LV], "leather"],
         ["minecraft:prismarine_shard", "minecraft:prismarine_crystals", GTValues.VA[GTValues.MV], "prismarine_crystals"],
         ["minecraft:prismarine_crystals", "minecraft:prismarine_shard", GTValues.VA[GTValues.MV], "prismarine_shards"],

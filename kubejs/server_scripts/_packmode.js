@@ -24,7 +24,8 @@ const doSteamAge = !!global.doSteamAge;
 const doStoneline = !!global.doStoneline;
 const doFluxbore = !!global.doFluxbore;
 const doHarderFluxBore = !!global.doHarderFluxBore;
-const doQuantumCoolant = !!global.doQuantumCoolant;
+// gtmutils only registers Quantum Coolant when the WAT coolant mechanic is enabled in its config
+const doQuantumCoolant = !!global.doQuantumCoolant && Fluid.exists("gtmutils:quantum_coolant");
 
 PlayerEvents.loggedIn(event => {
     const gameStages = [

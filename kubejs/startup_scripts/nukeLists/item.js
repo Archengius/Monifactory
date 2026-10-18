@@ -525,6 +525,31 @@ if (Platform.isLoaded("create")) {
     );
 }
 
+// RFTools Compat
+if (Platform.isLoaded("rftoolsbase")) {
+    global.itemNukeList.push(
+        /^rftoolsbase:dimensionalshard_/,
+        /^rftoolsbase:smartwrench/,
+        /^rftoolsbase:tablet/,
+        "rftoolsbase:crafting_card",
+        "rftoolsbase:infused_diamond",
+        "rftoolsbase:infused_enderpearl",
+        "rftoolsbase:machine_base",
+        "rftoolsbase:manual"
+    );
+}
+if (Platform.isLoaded("rftoolsbuilder")) {
+    global.itemNukeList.push(
+        /^rftoolsbuilder:space_chamber/,
+        /^rftoolsbuilder:shape_card_quarry/,
+        /^rftoolsbuilder:shape_card_pump/,
+        /^rftoolsbuilder:shield_block\d$/,
+        /^rftoolsbuilder:\w+_shield_template_block$/,
+        /^rftoolsbuilder:mover/,
+        /^rftoolsbuilder:vehicle_/
+    );
+}
+
 // Advanced AE Compat
 // Removes all those boring solutions, useless crafting components, and whatever
 if (Platform.isLoaded("advanced_ae")) {

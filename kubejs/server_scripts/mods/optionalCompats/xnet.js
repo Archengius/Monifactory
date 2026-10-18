@@ -9,25 +9,7 @@ Antenna Dish: IV
 if (Platform.isLoaded("xnet")) {
     console.log("XNet found, loading compat scripts...")
     ServerEvents.recipes(event => {
-        // Remove all recipes from RFToolsBase and XNet
-        event.remove({ mod: "rftoolsbase" })
         event.remove({ mod: "xnet" })
-
-        // Add back in RFTools' information screen for the funsies
-        event.shapeless("rftoolsbase:information_screen", ["gtceu:computer_monitor_cover"]);
-        event.shapeless("gtceu:computer_monitor_cover", ["rftoolsbase:information_screen"]);
-
-        // Add back in RFTools' Filter Module because of its functionality with XNet
-        event.shaped("rftoolsbase:filter_module", [
-            " P ",
-            "RHR",
-            " I "
-        ], {
-            P: "#forge:paper",
-            R: "#forge:dusts/redstone",
-            H: "minecraft:hopper",
-            I: "#forge:plates/steel"
-        })
 
         // Basic Cables
         let colors = ["red", "green", "blue", "yellow"];

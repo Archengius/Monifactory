@@ -875,4 +875,7 @@ ServerEvents.recipes(event => {
         .blastFurnaceTemp(1700)
         .duration(4 * GTValues.SECONDS)
         .EUt(GTValues.VA[GTValues.MV])
+
+    // Unbreakable iChisel
+    event.shapeless(Item.of("chisel:hitech_chisel", "{Unbreakable:1b}"), ["chisel:hitech_chisel", "minecraft:nether_star"]).id("moni:unbreakable_hitech_chisel")
 })

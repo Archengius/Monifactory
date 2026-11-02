@@ -83,6 +83,8 @@ ServerEvents.tags("item", event => {
     event.add("mae2:p2p_attunements/pattern_p2p_tunnel", "expatternprovider:pattern_modifier");
     event.add("mae2:p2p_attunements/pattern_p2p_tunnel", "expatternprovider:ex_pattern_provider");
     event.add("mae2:p2p_attunements/pattern_p2p_tunnel", "expatternprovider:ex_pattern_provider_part");
+    event.add("ae2:p2p_attunements/redstone_p2p_tunnel", /^projectred_transmission:((framed_)?red_alloy|[a-z_]+_insulated)_wire$/);
+    event.add("ae2:p2p_attunements/redstone_p2p_tunnel", "ae2:level_emitter");
 
     // ULV and MAX components
     const covers = ["electric_pump", "conveyor_module", "fluid_regulator", "robot_arm", "electric_motor", "electric_piston"]

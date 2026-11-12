@@ -869,4 +869,31 @@ ServerEvents.recipes(event => {
 
     // Unbreakable iChisel
     event.shapeless(Item.of("chisel:hitech_chisel", "{Unbreakable:1b}"), ["chisel:hitech_chisel", "minecraft:nether_star"]).id("moni:unbreakable_hitech_chisel")
+
+    // Makes LBB craftable before LV circuits
+    event.remove({ output: "gtceu:bronze_large_boiler" })
+    event.recipes.gtceu.shaped("gtceu:bronze_large_boiler", [
+        "BVB",
+        "LFS",
+        "BVB"
+    ], {
+        F: "gtceu:bronze_firebox_casing",
+        B: "gtceu:steam_machine_casing",
+        V: "gtceu:vacuum_tube",
+        S: "gtceu:hp_steam_solid_boiler",
+        L: "gtceu:hp_steam_liquid_boiler"
+    }).addMaterialInfo()
+
+    event.remove({ output: "gtceu:steel_large_boiler" })
+    event.recipes.gtceu.shaped("gtceu:steel_large_boiler", [
+        "BVB",
+        "LFS",
+        "BVB"
+    ], {
+        F: "gtceu:steel_firebox_casing",
+        B: "gtceu:solid_machine_casing",
+        V: "#gtceu:circuits/mv",
+        S: "gtceu:hp_steam_solid_boiler",
+        L: "gtceu:hp_steam_liquid_boiler"
+    }).addMaterialInfo()
 })

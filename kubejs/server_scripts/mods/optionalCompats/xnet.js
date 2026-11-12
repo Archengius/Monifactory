@@ -40,7 +40,7 @@ if (Platform.isLoaded("xnet")) {
         })
         event.recipes.gtceu.assembler("xnet:connector_upgrade")
             .itemOutputs("xnet:connector_upgrade")
-            .itemInputs(["#forge:paper", "gtceu:diamond_plate", "4x gtceu:enori_gem"])
+            .itemInputs(["minecraft:paper", "gtceu:diamond_plate", "4x gtceu:enori_gem"])
             .inputFluids(Fluid.of("thermal:ender", 250))
             .EUt(GTValues.VA[GTValues.MV])
             .duration(140)
@@ -76,7 +76,7 @@ if (Platform.isLoaded("xnet")) {
             "SGS",
             "PSP"
         ], {
-            P: "#forge:paper",
+            P: "minecraft:paper",
             S: "#forge:plates/steel",
             G: "#forge:glass"
         })

@@ -1215,7 +1215,7 @@ ServerEvents.recipes(event => {
     event.remove({ id: "gtceu:research_station/1x_gtceu_me_pattern_buffer" })
     event.remove({ output: "gtceu:me_pattern_buffer_proxy" })
     event.recipes.gtceu.assembly_line("kubejs:me_pattern_buffer_proxy")
-        .itemInputs("gtceu:luv_machine_hull", "2x gtceu:luv_sensor", "#gtceu:circuits/luv", "ae2:quantum_link", "2x ae2:quantum_ring", "32x gtceu:fine_europium_wire", "32x gtceu:fine_europium_wire")
+        .itemInputs("gtceu:luv_machine_hull", "2x gtceu:luv_sensor", "#gtceu:circuits/luv", "ae2:quantum_link", "2x ae2:quantum_ring", "kubejs:iv_universal_circuit", "32x gtceu:fine_europium_wire", "32x gtceu:fine_europium_wire")
         .inputFluids("gtceu:soldering_alloy 576", "gtceu:lubricant 500")
         .itemOutputs("gtceu:me_pattern_buffer_proxy")
         .scannerResearch("gtceu:me_pattern_buffer")
